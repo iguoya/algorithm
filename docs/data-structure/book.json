@@ -1,0 +1,41 @@
+{
+	"title": "数据结构和算法", 
+	"language": "zh-hans",
+	"author": "tiger",
+	"plugins": [
+		"fontsettings",
+		"highlight",
+		"livereload",
+		"-sharing",
+		"page-toc",
+		"search-pro",
+		"-search",
+		"-lunr",
+		"mermaid-gb3",
+		"katex",
+		"chart",
+		"new-flowchart",
+		"graph"
+	],
+	"pluginsConfig": {
+		"fontsettings": {
+			"theme": "sepia",
+			"family": "serif",
+			"size": 6
+		},
+		"theme-default": {
+			"showLevel": true
+		},
+		"page-toc": {
+			"selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+			"position": "before-first",
+			"showByDefault": true
+		},
+		"chart": {
+            		"type": "highcharts"
+		},
+		"flow": {
+			"line-color": "red"
+		}
+	}
+}
