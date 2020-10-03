@@ -2,3 +2,4 @@ node_modules/
 docs/.vuepress/dist/
 yarn-error.log
 cmake-build-debug
+.idea
