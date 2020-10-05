@@ -12,7 +12,6 @@ int step(int n) {
     } else if (n == 0) {
         ++total_method;
         printf("%2d:", total_method);
-
         for(int i = 0; i < index; ++i) {
             printf("-%d-", step_queue[i]);
         }

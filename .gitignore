@@ -3,3 +3,4 @@ docs/.vuepress/dist/
 yarn-error.log
 cmake-build-debug
 .idea
+.DS_Store

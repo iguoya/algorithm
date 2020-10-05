@@ -1,0 +1,3 @@
+/home/tiger/algorithm/recursion/build-hanoi-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/tiger/algorithm/recursion/build-hanoi-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/tiger/algorithm/recursion/build-hanoi-Desktop-Debug/CMakeFiles/hanoi.dir

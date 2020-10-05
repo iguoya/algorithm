@@ -7,11 +7,11 @@ int fibonacci(int n) {
     return fibonacci(n-1)+fibonacci(n-2);
 }
 
-size_t fibonacci_normal(int n) {
+int fibonacci_normal(int n) {
     int first_num = 1;
     int second_num = 1;
     if(n <= 2) return 1;
-    size_t result = 0;
+    int result = 0;
     for(int i = 3; i <= n; ++i) {
         result = first_num + second_num;
         first_num = second_num;
@@ -28,7 +28,7 @@ int main() {
         }
     }
     for(int i = 1; i<=40; ++i) {
-        printf("%10zd", fibonacci_normal(i));
+        printf("%10d", fibonacci_normal(i));
         if(i%5 == 0) {
             printf("\n");
         }
