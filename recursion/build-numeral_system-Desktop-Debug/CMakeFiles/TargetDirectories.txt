@@ -1,3 +1,0 @@
-/home/tiger/algorithm/recursion/build-numeral_system-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/tiger/algorithm/recursion/build-numeral_system-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/tiger/algorithm/recursion/build-numeral_system-Desktop-Debug/CMakeFiles/numeral_system.dir

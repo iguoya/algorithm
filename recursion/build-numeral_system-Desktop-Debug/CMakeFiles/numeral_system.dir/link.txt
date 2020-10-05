@@ -1,1 +1,0 @@
-/usr/bin/gcc -g   CMakeFiles/numeral_system.dir/main.c.o  -o numeral_system 
