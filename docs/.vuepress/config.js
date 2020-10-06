@@ -1,8 +1,7 @@
-
 module.exports = {
-  title: ' Mathematics Notebook',
-  description: ' Note, Practice and Solving Problems',
-  base: '/mathematics/',
+  title: '算法和编程语言练习',
+  description: ' 编程语言和算法练习 ',
+  base: '/algorithm/',
 //  dest: 'public',
   plugins: [
     'autobar',
@@ -15,16 +14,16 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: '首页',
-        link: '/home/'
+        text: '算法',
+        link: '/algorithm/'
       },
       {
-        text: 'H5',
-        link: '/H5/'
+        text: '数据结构',
+        link: '/data-structure/'
       },
       {
-        text: '规范',
-        link: '/Standard/'
+        text: 'C++',
+        link: '/c++/'
       }
     ],
     sidebar: [
