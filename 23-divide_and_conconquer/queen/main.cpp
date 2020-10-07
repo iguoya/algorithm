@@ -5,37 +5,62 @@
 #include <iomanip>
 using namespace std;
 
+//template <typename T>
+bool check_points(map<int, int> points) {
 
-template <typename T>
-bool check_rule(const vector<T> &route) {
-    //check from small to large , sequential
-    bool is_less_valid = 0;
-    for(auto it=route.begin(); it != route.end()-1; ++it) {
-        if(*it < *(it+1)) {
+    for(auto item: points) {
+        cout<<"("<<item.first<<","<<item.second<<")"<<"\t";
+    }
+    cout<<endl;
 
-        } else {
-            is_less_valid = 1;
-            break;
+    for(auto it=points.begin(); it!=points.end(); ++it) {
+        int offset = 1;
+
+        auto ip = it;
+        ++ip;
+        for(; ip != points.end(); ++ip, ++offset) {
+//            cout<<"compare:"<<"("<<it->first+offset<<","<<it->second+offset<<") vs"
+//            <<"("<<ip->first<<","<<ip->second<<")"
+//            <<"\toffset:"<<offset
+//            <<endl;
+
+            if(it->second+offset == ip->second) {
+//                cout<<"same"<<endl;
+                return false;
+            }
+//            cout<<"compare: "<<"("<<it->first+offset<<","<<it->second-offset<<") vs"
+//                <<"("<<ip->first<<","<<ip->second<<")"
+//                <<"\toffset:"<<offset
+//                <<endl;
+            if(it->second-offset == ip->second) {
+//                cout<<"same"<<endl;
+                return false;
+            }
         }
+
     }
-    bool is_greater_valid = 0;
-    for(auto it=route.begin(); it != route.end()-1; ++it) {
-        if(*it > *(it+1)) {
-        } else {
-            is_greater_valid = 1;
-            break;
-        }
-    }
-    if(is_less_valid && is_greater_valid) {
-        return true;
-    } else {
-        return false;
-    }
+    cout<<"------------succeed-------------"
+        <<endl;
+    return true;
 }
 
 
-template <typename T>
-void queen(list<T> sample, vector<T> route, vector<vector<T>> &result) {
+//template <typename T>
+bool check_rule(const vector<int> &route) {
+    //check from small to large , sequential
+    bool is_less_valid = 0;
+    map<int, int> points;
+    int row = 1;
+    for(const auto node: route) {
+        points.insert(make_pair(row, node));
+        ++row;
+    }
+    return check_points(points);
+}
+
+
+//template <typename T>
+void queen(list<int> sample, vector<int> route, vector<vector<int>> &result) {
     if(sample.size() == 0) {
         if(check_rule(route)) {
             result.push_back(route);
@@ -44,7 +69,7 @@ void queen(list<T> sample, vector<T> route, vector<vector<T>> &result) {
     } else {
         for(const auto node: sample) {
             route.push_back(node);
-            list<T> less_sample(sample);
+            list<int> less_sample(sample);
             less_sample.remove(node);
             queen(less_sample, route, result);
             route.pop_back();
@@ -64,12 +89,12 @@ void show(vector<vector<T>> &result) {
     cout<<endl;
 }
 
-template <typename T>
-void show_chessboard(vector<vector<T>> &result) {
+//template <typename T>
+void show_chessboard(vector<vector<int>> &result) {
 //    cout<<"符合规则的八皇后棋盘共有:\t"<<result.size()<<"\t种";
 
     for(const auto &route: result) {
-        map<int, T> points;
+        map<int, int> points;
         int row = 1;
         for(const auto &node: route) {
             points.insert(make_pair(row, node));
@@ -101,7 +126,8 @@ void show_chessboard(vector<vector<T>> &result) {
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
-    list<int> sample={1, 2, 3, 4};
+//    list<int> sample={1, 2, 3, 4};
+    list<int> sample={1, 2, 3, 4, 5, 6, 7, 8};
     vector<int> route;
     vector<vector<int>> result;
 
