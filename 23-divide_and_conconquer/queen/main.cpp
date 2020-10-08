@@ -39,8 +39,7 @@ bool check_points(map<int, int> points) {
         }
 
     }
-    cout<<"------------succeed-------------"
-        <<endl;
+    cout<<"------------succeed-------------"<<endl;
     return true;
 }
 
