@@ -45,6 +45,7 @@ int main() {
 //    cout<<"is empty ??"<<endl;
 //    show(result);
 //    cout<<"empty!!!"<<endl;
+//ddd
 
 
     vector<vector<string>> result2;

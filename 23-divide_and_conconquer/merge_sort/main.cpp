@@ -16,9 +16,10 @@ int main() {
         m = u(e);
         cout<<m<<"\t";
     }
+    //
     cout<<endl;
 
-
+    //dddddddd
 
 //    shuffle(sample.begin(), sample.end(), std::default_random_engine(0));
 //
