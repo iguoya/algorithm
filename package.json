@@ -7,6 +7,10 @@
   "license": "MIT",
   "devDependencies": {
     "@maginapp/vuepress-plugin-katex": "^1.0.7",
+    "axios": "^0.20.0",
+    "echarts": "^4.9.0",
+    "echarts-gl": "^1.1.1",
+    "vue-echarts": "^5.0.0-beta.0",
     "vuepress": "^1.5.4",
     "vuepress-plugin-autobar": "boboidream/vuepress-bar",
     "vuepress-plugin-mermaidjs": "^1.8.0"

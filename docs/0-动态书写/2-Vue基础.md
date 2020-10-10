@@ -10,9 +10,13 @@
 
 
 
-## hello
+## 第一个组件
 
 <hello />
+
+## 测试
+
+<customer-component />
 
 ## el挂载点
 

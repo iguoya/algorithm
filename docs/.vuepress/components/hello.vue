@@ -1,29 +1,47 @@
 <template>
-  <div id="hello">
-    <br/>
-    {{ message }} ---- {{name}}
-    <p>
- {{ school.name }} {{school.mobile}}
-    </p>
-    <ul>
-        <li></li>
-        </ul>
-  </div>
+<div class="abc">
+    todoList:
+    <div v-for="item in list" :key="item.id">
+        项目：{{item.text}}，状态：{{item.done ? '完成': '进行中'}}
+    </div>
+</div>
 </template>
 
 <script>
 export default {
-  el: 'hello',
-  data () {
-    return {
-      message: "Hello 雪虎 ！！！",
-      school: {
-          name: "黑马程序员",
-          mobile: "112334343434"
-      },
-      campus:["北京校区", "上海校区", "深圳校区"]
-    
+    name: 'abc',
+    data() {
+        return {
+            list: []
+        }
+    },
+    created() {
+        this.list = [{
+                id: 1,
+                text: 'JavaScript',
+                done: false
+            },
+            {
+                id: 2,
+                text: 'HTML',
+                done: false
+            },
+            {
+                id: 3,
+                text: 'CSS',
+                done: true
+            },
+            {
+                id: 4,
+                text: 'Vue.js',
+                done: true
+            },
+            {
+                id: 5,
+                text: 'VuePress',
+                done: true
+            }
+        ]
     }
-  }
 }
 </script>
