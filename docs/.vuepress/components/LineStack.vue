@@ -1,5 +1,5 @@
 <template>
-<div style="width: 100%;height: 400px;margin:50px 0px;" id="LineChart">
+<div style="width: 100%;height:500px;margin:50px 0px;" id="Chart">
     <v-chart :options="myline" />
 </div>
 </template>
@@ -15,7 +15,7 @@ import 'echarts-gl';
 // import 'echarts/lib/chart/gauge';
 
 export default {
-    name: 'LineChart',
+    name: 'Chart',
     components: {
         'v-chart': ECharts
     },

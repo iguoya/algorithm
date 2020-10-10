@@ -1,5 +1,5 @@
 <template>
-<div style="width: 100%;height: 600px;">
+<div style="width: 100%;height: 400px;margin:50px 0px;">
     <v-chart :options="polar" />
 </div>
 </template>
