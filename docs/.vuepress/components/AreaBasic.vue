@@ -1,5 +1,5 @@
 <template>
-<div style="width: 100%;height:500px;margin:50px 0px;" id="TestChart">
+<div style="width: 100%;height:500px;margin:50px 0px;" id="a">
     <v-chart :options="myline" />
 </div>
 </template>
@@ -10,7 +10,7 @@ import ECharts from 'vue-echarts';
 import 'echarts-gl';
 
 // 按需引入不同的图表需要的依赖
-// import 'echarts/lib/chart/line';
+import 'echarts/lib/chart/line';
 // import 'echarts/lib/component/polar';
 // import 'echarts/lib/chart/gauge';
 
