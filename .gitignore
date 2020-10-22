@@ -7,3 +7,7 @@ cmake-build-debug
 CMakeFiles
 CMakeCache.txt
 build-*
+*.xcodeproj
+*.build
+*Desktop_x86_darwin_generic_mach_o_64bit-Debug
+CMakeScripts
